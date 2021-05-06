@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            margin: 0 0;
+            position: relative;
+            font-size: 14px;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+        }
+        img {
+            max-width: 2500px;
+        }
+    </style>
+</head>
+
+<body>
+    <marquee style="border:blue 2px SOLID">
+        <h1>Login</h1>
+    </marquee>
+
+    <center>
+        <form action="/doLogin" method="post">
+            Name <input type="text" name="txtName">
+            <br>
+            Password <input type="password" name="txtPassword">
+            <input type="submit" value="Login">
+            <span style="color: red;">{{message}}</span>
+            <br>
+            New? <a href="/register">
+                <h1> Register</h1>
+            </a>
+        </form>
+    </center>
+    <center><img src="home.jfif"> </img></center>
+
+</body>
+
+</html>
